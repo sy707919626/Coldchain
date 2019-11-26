@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/list_background_lixian">
+
+    <TextView
+        android:id="@+id/equipment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="设备编号："
+        android:textSize="@dimen/text_size_trhee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/equipment_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_trhee"
+        android:textColor="@color/white"
+        android:text="BF12145454"
+        app:layout_constraintBottom_toBottomOf="@+id/equipment_text"
+        app:layout_constraintStart_toEndOf="@+id/equipment_text"
+        app:layout_constraintTop_toTopOf="@+id/equipment_text" />
+
+    <TextView
+        android:id="@+id/equipment_Offline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:text="离线"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_trhee"
+        app:layout_constraintBottom_toBottomOf="@+id/equipment_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/equipment_text" />
+
+    <TextView
+        android:id="@+id/equipment_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="M300-信号验证"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equipment_number" />
+
+    <TextView
+        android:id="@+id/equipment_wendu_status_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/white"
+        android:text="温度"
+        android:textSize="@dimen/text_size_trhee"
+        app:layout_constraintEnd_toStartOf="@+id/equipment_wendu_status_text"
+        app:layout_constraintTop_toBottomOf="@+id/equipment_name" />
+
+    <TextView
+        android:id="@+id/equipment_wendu_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="24.2℃"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_bt"
+        app:layout_constraintBottom_toBottomOf="@+id/equipment_wendu_status_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/equipment_wendu_status_name" />
+
+    <TextView
+        android:id="@+id/equipment_shidu_status_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:text="湿度"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_trhee"
+        app:layout_constraintEnd_toStartOf="@+id/equipment_shidu_status_text"
+        app:layout_constraintTop_toBottomOf="@+id/equipment_wendu_status_text" />
+
+    <TextView
+        android:id="@+id/equipment_shidu_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="24.2%"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_bt"
+        app:layout_constraintBottom_toBottomOf="@+id/equipment_shidu_status_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/equipment_shidu_status_name" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/fanwei"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="范围："-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/equipment_canshu_btn"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/equipment_canshu_btn"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/start_equipment"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/text_size_trhee"-->
+        <!--android:text="0.0"-->
+        <!--android:textColor="@color/text_color_black"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/fanwei"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/fanwei"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/fanwei" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/qujian"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:text="~"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/start_area"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/start_equipment"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/start_equipment" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/end_equipment"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:text="90%"-->
+        <!--android:textColor="@color/text_color_black"-->
+        <!--android:textSize="@dimen/text_size_trhee"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/start_equipment"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/qujian"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/start_equipment"/>-->
+
+    <com.bfby.coldchain.common.widget.PowerView
+        android:id="@+id/power"
+        android:layout_width="18dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/equipment_canshu_btn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/equipment_canshu_btn"
+        android:visibility="gone"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_bg_shixin"
+        android:text="参数设置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_trhee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equipment_shidu_status_text" />
+
+
+</android.support.constraint.ConstraintLayout>

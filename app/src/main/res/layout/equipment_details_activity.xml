@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/details_waybill_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_percent="0.18575063"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/equipment_jb_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="基本信息"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/login_edit_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/equipment_no_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:text="设备编号："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintEnd_toEndOf="@id/guide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/equipment_jb_text" />
+
+            <TextView
+                android:id="@+id/equipment_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintBottom_toBottomOf="@+id/equipment_no_text"
+                app:layout_constraintStart_toEndOf="@+id/guide"
+                app:layout_constraintTop_toTopOf="@+id/equipment_no_text" />
+
+            <TextView
+                android:id="@+id/equipment_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:text="设备别名："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintEnd_toEndOf="@id/guide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/equipment_no" />
+
+            <TextView
+                android:id="@+id/equipment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintBottom_toBottomOf="@+id/equipment_name_text"
+                app:layout_constraintStart_toEndOf="@+id/guide"
+                app:layout_constraintTop_toTopOf="@+id/equipment_name_text" />
+
+            <TextView
+                android:id="@+id/equipment_tx_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:text="通讯状态："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintEnd_toEndOf="@id/guide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/equipment_name_text" />
+
+            <TextView
+                android:id="@+id/equipment_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintBottom_toBottomOf="@+id/equipment_tx_text"
+                app:layout_constraintStart_toEndOf="@+id/guide"
+                app:layout_constraintTop_toTopOf="@+id/equipment_tx_text" />
+
+            <TextView
+                android:id="@+id/equipment_type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:text="设备类型："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintEnd_toEndOf="@id/guide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/equipment_tx_text" />
+
+            <TextView
+                android:id="@+id/equipment_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintBottom_toBottomOf="@+id/equipment_type_text"
+                app:layout_constraintStart_toEndOf="@+id/guide"
+                app:layout_constraintTop_toTopOf="@+id/equipment_type_text" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/equipment_power_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:text="电量："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintEnd_toEndOf="@id/guide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/equipment_type_text" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/equipment_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintBottom_toBottomOf="@+id/equipment_power_text"
+                app:layout_constraintStart_toEndOf="@+id/guide"
+                app:layout_constraintTop_toTopOf="@+id/equipment_power_text" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/equipment_info_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:text="信号强度："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintEnd_toEndOf="@id/guide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/equipment_power_text" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/equipment_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintBottom_toBottomOf="@+id/equipment_info_text"
+                app:layout_constraintStart_toEndOf="@+id/guide"
+                app:layout_constraintTop_toTopOf="@+id/equipment_info_text" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/equipment_imei_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:text="IMEI："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintEnd_toEndOf="@id/guide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/equipment_info_text" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/equipment_imei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintBottom_toBottomOf="@+id/equipment_imei_text"
+                app:layout_constraintStart_toEndOf="@+id/guide"
+                app:layout_constraintTop_toTopOf="@+id/equipment_imei_text" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/equipment_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:text="数据时间："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintEnd_toEndOf="@id/guide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/equipment_imei_text" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/equipment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintBottom_toBottomOf="@+id/equipment_time_text"
+                app:layout_constraintStart_toEndOf="@+id/guide"
+                app:layout_constraintTop_toTopOf="@+id/equipment_time_text" />
+
+
+            <TextView
+                android:id="@+id/equipment_banben_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:text="软件版本："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintEnd_toEndOf="@id/guide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/equipment_time_text" />
+
+            <TextView
+                android:id="@+id/equipment_banben"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintBottom_toBottomOf="@+id/equipment_banben_text"
+                app:layout_constraintStart_toEndOf="@+id/guide"
+                app:layout_constraintTop_toTopOf="@+id/equipment_banben_text" />
+
+            <TextView
+                android:id="@+id/equipment_banben_yj_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:text="硬件版本："
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintEnd_toEndOf="@id/guide"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/equipment_banben_text" />
+
+            <TextView
+                android:id="@+id/equipment_banben_yj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_trhee"
+                app:layout_constraintBottom_toBottomOf="@+id/equipment_banben_yj_text"
+                app:layout_constraintStart_toEndOf="@+id/guide"
+                app:layout_constraintTop_toTopOf="@+id/equipment_banben_yj_text" />
+
+            <View
+                android:id="@+id/view_lines"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/text_info"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/equipment_banben_yj_text" />
+
+            <TextView
+                android:id="@+id/equipment_sssj_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="15dp"
+                android:text="监测点实时数据"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/login_edit_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_lines" />
+
+            <LinearLayout
+                android:id="@+id/list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/equipment_sssj_text">
+
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/lv_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</LinearLayout>

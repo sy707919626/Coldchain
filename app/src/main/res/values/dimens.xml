@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="material_status_progress_border">3dp</dimen>
+
+    <dimen name="text_size_one">28dp</dimen>
+    <dimen name="text_size_two">22dp</dimen>
+    <dimen name="text_size_trhee">14dp</dimen>
+    <dimen name="text_size_four">12dp</dimen>
+    <dimen name="login_edit_size">16dp</dimen>
+    <dimen name="button_size">20dp</dimen>
+    <dimen name="text_bt">18dp</dimen>
+
+
+    <!--电池控件 高度-->
+    <dimen name="power_consumption_rankings_dimen_main_battery_view_height">35dp</dimen>
+    <!--电池控件 宽度-->
+    <dimen name="power_consumption_rankings_dimen_main_battery_view_width">18dp</dimen>
+
+    <!--电池外壳 厚度-->
+    <dimen name="power_consumption_rankings_dimen_main_battery_view_shell_stroke_width">2dp
+    </dimen>
+    <!--电池外壳 宽度-->
+    <dimen name="power_consumption_rankings_dimen_main_battery_view_shell_width">20dp</dimen>
+    <!--电池外壳 高度-->
+    <dimen name="power_consumption_rankings_dimen_main_battery_view_shell_height">35dp</dimen>
+    <!--电池外壳 圆角-->
+    <dimen name="power_consumption_rankings_dimen_main_battery_view_shell_corner">3dp</dimen>
+
+    <!--电池头 宽度-->
+    <dimen name="power_consumption_rankings_dimen_main_battery_view_head_width">7dp</dimen>
+    <!--电池头 高度-->
+    <dimen name="power_consumption_rankings_dimen_main_battery_view_head_height">2dp</dimen>
+    <!--电池头 圆角-->
+    <dimen name="power_consumption_rankings_dimen_main_battery_view_head_corner">1dp</dimen>
+
+    <!--电池外壳和电池等级直接的间距-->
+    <dimen name="power_consumption_rankings_dimen_main_battery_view_gap">2.5dp</dimen>
+
+    <!--电池 宽度-->
+    <dimen name="power_consumption_rankings_dimen_main_battery_level_width">18dp</dimen>
+    <!--电池 最大高度-->
+    <dimen name="power_consumption_rankings_dimen_main_battery_level_max_height">30dp</dimen>
+</resources>
